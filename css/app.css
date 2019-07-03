@@ -1,0 +1,8 @@
+.container{
+    margin-top: 50px;
+}
+
+.alert-danger{
+    margin-top: 20px;
+    display: none;
+}

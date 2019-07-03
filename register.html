@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>注册</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/app.css">
+    <link rel="stylesheet" href="./css/jquery.pwcheck.css">
+    <script src="./js/jquery.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/jquery.pwcheck.js"></script>
+</head>
+<body>
+<div class="wrapper">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-md-8">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <a href="#">主页</a> / 注册
+                    </div>
+                    <div class="panel-body">
+                        <form role="form" id="form">
+                            <div class="form-group">
+                                <label for="username">用户名</label>
+                                <input type="text" class="form-control" id="username" name="username" placeholder="用户名只能是字母开头的6~8位数字串">
+                            </div>
+                            <div class="form-group">
+                                <label for="password">密码</label>
+                                <input type="password" class="form-control" id="password" name="password" placeholder="密码只能是8~12为字符串">
+                            </div>
+                            <div class="form-group">
+                                <label for="password">确认密码</label>
+                                <input type="password" class="form-control" id="confirm-password" name="confirm-password" placeholder="确认密码">
+                            </div>
+                            <div class="form-group">
+                                <input type="checkbox" name="agree" id="agree" value="1"/>
+                                <span>我已阅读并同意《平台用户协议》</span>
+                            </div>
+                            <button type="button" id="btn" class="btn btn-primary" disabled="disabled">注册</button>
+                            <span class="message" style="color: #d43f3a"><span/>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2"></div>
+        </div>
+    </div>
+</div>
+<script src="./js/register.js"></script>
+</body>
+</html>
