@@ -5,7 +5,7 @@ $(function () {
     $("#agree").click(function () {
         var checked = $("#agree").is(":checked");
         if(checked){
-            console.log(checked)
+            // console.log(checked)
             $("#btn").removeAttr("disabled");
         }else{
             $("#btn").attr("disabled",true);
@@ -17,7 +17,8 @@ $(function () {
         // 用户名正则
         var usernameReg = /^[a-zA-Z]([a-zA-Z0-9]){5,7}$/;
 
-        var passwordReg = /^(?=.*[0-9])(?=.*[a-zA-Z])(?=.*[^a-zA-Z0-9]).{8,12}$/;
+        // 密码正则
+        var passwordReg = /^[\w\W]{8,12}$/;
 
         var username = $("#username").val();
         var password = $("#password").val();
@@ -70,5 +71,6 @@ $(function () {
         } else {
             $(".message").hide();
         }
+        window.location.href = "./login.html";
     });
 });
